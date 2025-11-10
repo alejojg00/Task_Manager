@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <!-- Logo ECCI -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_ecci"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Logo ECCI" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEMANA DE INGENIERÍA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Botones del menú -->
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Listar"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#2196F3" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Consultar"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF9800" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#9C27B0" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textSize="16sp"
+        android:backgroundTint="#F44336" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Task Manager</string>
+
+    <!-- Navegacion -->
+    <string name="nav_tasks">Tareas</string>
+    <string name="nav_categories">Categorias</string>
+    <string name="nav_statistics">Estadisticas</string>
+    <string name="nav_settings">Configuracion</string>
+
+    <!-- Acciones -->
+    <string name="add_task">Agregar tarea</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="search">Buscar</string>
+
+    <!-- Formulario -->
+    <string name="title">Titulo</string>
+    <string name="description">Descripcion</string>
+    <string name="priority">Prioridad</string>
+    <string name="category">Categoria</string>
+    <string name="due_date">Fecha limite</string>
+    <string name="reminder">Recordatorio</string>
+    <string name="enable_reminder">Habilitar recordatorio</string>
+    <string name="select_date">Seleccionar fecha limite</string>
+    <string name="select_time">Seleccionar hora</string>
+    <string name="has_reminder">Tiene recordatorio</string>
+
+    <!-- Estados -->
+    <string name="no_tasks">No hay tareas</string>
+    <string name="add_task_hint">Toca el boton + para crear una nueva tarea</string>
+
+    <!-- Mensajes -->
+    <string name="task_created">Tarea creada exitosamente</string>
+    <string name="task_updated">Tarea actualizada</string>
+    <string name="task_deleted">Tarea eliminada</string>
+    <string name="task_completed">Tarea completada!</string>
+    <string name="error_title_required">El titulo es obligatorio</string>
+    <string name="undo">Deshacer</string>
+
+    <!-- Dialogos -->
+    <string name="delete_task_title">Eliminar tarea</string>
+    <string name="delete_task_message">Estas seguro de que deseas eliminar esta tarea?</string>
+
+    <!-- Drawer -->
+    <string name="drawer_open">Abrir menu</string>
+    <string name="drawer_close">Cerrar menu</string>
+    <!-- Recordatorios rapidos -->
+    <string name="quick_reminder_15min">En 15 min</string>
+    <string name="quick_reminder_30min">En 30 min</string>
+    <string name="quick_reminder_1hour">En 1 hora</string>
+    <string name="quick_reminder_tomorrow">Manana 9 AM</string>
+    <string name="quick_reminder_custom">Personalizado</string>
+    <string name="quick_reminder_options">Opciones rapidas:</string>
+    <string name="reminder_not_configured">No configurado</string>
+</resources>
