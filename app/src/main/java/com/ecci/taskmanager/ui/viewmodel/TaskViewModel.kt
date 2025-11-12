@@ -67,6 +67,14 @@ class TaskViewModel @Inject constructor(
         }
     }
 
+
+    // ⭐ MÉTODO NUEVO: Para SettingsFragment (importar tareas)
+    fun insertTask(task: Task) {
+        viewModelScope.launch {
+            taskRepository.insertTask(task)
+        }
+    }
+
     fun getTaskById(taskId: Long): LiveData<Task?> {
         return taskRepository.getTaskByIdLive(taskId)
     }
@@ -162,6 +170,25 @@ class TaskViewModel @Inject constructor(
 
             result.onSuccess {
                 _successMessage.value = "Tareas completadas eliminadas"
+                _errorMessage.value = null
+            }.onFailure { exception ->
+                _errorMessage.value = exception.message ?: "Error al eliminar tareas"
+                _successMessage.value = null
+            }
+
+            _isLoading.value = false
+        }
+    }
+
+    // ⭐ MÉTODO NUEVO: Eliminar TODAS las tareas (para Settings)
+    fun deleteAllTasks() {
+        viewModelScope.launch {
+            _isLoading.value = true
+
+            val result = taskRepository.deleteAllTasks()
+
+            result.onSuccess {
+                _successMessage.value = "Todas las tareas han sido eliminadas"
                 _errorMessage.value = null
             }.onFailure { exception ->
                 _errorMessage.value = exception.message ?: "Error al eliminar tareas"

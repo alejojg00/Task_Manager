@@ -25,7 +25,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -36,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         setupNavigation()
         setupFab()
 
-        // AGREGAR ESTO:
+
         requestNotificationPermission()
     }
 
